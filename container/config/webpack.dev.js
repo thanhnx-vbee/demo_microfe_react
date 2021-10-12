@@ -18,10 +18,11 @@ const devConfig = {
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                helloReact: 'helloReact@http://localhost:8081/remoteEntry.js'
+                helloReact: 'helloReact@http://localhost:8081/remoteEntry.js',
+                byeReact: 'byeReact@http://localhost:8082/remoteEntry.js'
             },
             shared: packageJson.dependencies
-        })
+        }),
     ]
 }
 

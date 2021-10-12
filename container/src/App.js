@@ -3,7 +3,7 @@ import { createBrowserHistory } from "history";
 import React from 'react';
 import { Link, Route, Router, Switch } from "react-router-dom";
 import HelloReactApp from './components/HelloReactApp';
-
+import ByeReactApp from './components/ByeReactApp';
 const history = createBrowserHistory();
 
 const Header = () => (
@@ -21,6 +21,9 @@ export default () => {
             <hr />
             <Switch>
                 <Route path='/' component={HelloReactApp} />
+            </Switch>
+            <Switch>
+                <Route path='/' component={ByeReactApp} />
             </Switch>
         </Router>
     )
